@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if pet_type in pets %}
+        <h1>List of {{pet_type}} </h1>
+
+        <ul>
+            {% for pet in pets[pet_type] %}
+                <li><a href=/animals/{{pet_type}}/{{counter}}>{{pet['name']}}</a></li>
+                {% set counter = counter + 1 %}
+            {% endfor %}
+        </ul>
+        
+    {% else %}
+        <h1> Invalid pet. Please try again. </h1>
+    {% endif %}
+
+{% endblock %}

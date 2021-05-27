@@ -52,6 +52,11 @@ dog = [
         }
     ]
 
+# count = 2
 
+# if count <= (len(pets['dogs']) -1) and count > -1:
+#     print('Y')
+# else:
+#     print('N')
 
 # print(pets['dogs'][-3])
